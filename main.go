@@ -2,6 +2,7 @@ package main
 
 import (
 	"fmt"
+	"math/rand"
 	"reflect"
 )
 
@@ -13,6 +14,8 @@ func magic(a int, b int) (int, int) {
 	//retourne la somme et le produit des 2 entiers passe en paramètre
 	return a + b, a * b
 }
+
+var number int = 5 
 
 func main() {
 	PrintMessage("hello word again !")
@@ -29,6 +32,15 @@ func main() {
 	fmt.Println(num)
 
 	var decision bool = true
-	fmt.Println(decision)
+
+	number = 10 
+
+	a := rand.Int()
+	b := rand.Int()
+
+	fmt.Printf("New Value of number: %d\n",number)
+    fmt.Printf("Value of decision: %t\n"  ,decision)
+
+    fmt.Printf("Random  %d et %d " ,a,b)
 
 }
