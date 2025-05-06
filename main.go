@@ -15,7 +15,7 @@ func magic(a int, b int) (int, int) {
 	return a + b, a * b
 }
 
-var number int = 5 
+var number int = 5
 
 func main() {
 	PrintMessage("hello word again !")
@@ -28,19 +28,24 @@ func main() {
 	fmt.Println("Type of  :", reflect.TypeOf(sum))
 
 	//variables
-	var num int;
+	var num int
 	fmt.Println(num)
 
 	var decision bool = true
 
-	number = 10 
+	number = 10
 
 	a := rand.Int()
 	b := rand.Int()
 
-	fmt.Printf("New Value of number: %d\n",number)
-    fmt.Printf("Value of decision: %t\n"  ,decision)
+	fmt.Printf("New Value of number: %d\n", number)
+	fmt.Printf("Value of decision: %t\n", decision)
 
-    fmt.Printf("Random  %d et %d " ,a,b)
+	fmt.Printf("Random  %d et %d\n ", a, b)
+
+	//test challenge temperature conversion
+	temp := Celsius(100)
+
+	fmt.Printf("%.2f°C = %2.f°F\n", temp, toFahrenheit(temp))
 
 }
