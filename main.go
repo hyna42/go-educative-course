@@ -16,13 +16,19 @@ func magic(a int, b int) (int, int) {
 
 func main() {
 	PrintMessage("hello word again !")
-	sum, prod := magic(2,5)
+
+	sum, prod := magic(2, 5)
 
 	fmt.Println("Somme :", sum)
 	fmt.Println("Produit :", prod)
 
-
-	
 	fmt.Println("Type of  :", reflect.TypeOf(sum))
+
+	//variables
+	var num int;
+	fmt.Println(num)
+
+	var decision bool = true
+	fmt.Println(decision)
 
 }
