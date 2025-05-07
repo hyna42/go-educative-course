@@ -77,12 +77,24 @@ func main() {
 
 	test2 := ContainsEducative(phrasetestEmail)
 
-	test3 := MaskUserName("john-doe@gmail.com")
+	test3 := MaskUserName("daddy@gmail.com")
+
+	test4 := IndexOfAtSymbol("doe@gmail.com")
+
+	test5 := TrimAndSplitUserID("id-                   52hF ")
+
+	test6 := ConvertStringToInt("f123")
 
 	fmt.Printf("test 1 : IdentifyPrefixPostfix() : %t\n ", test1)
 
 	fmt.Printf("test 2 : ContainsEducative() : %t\n ", test2)
 
-	fmt.Printf("test 3 : ContainsEducative() : %s\n ", test3)
+	fmt.Printf("test 3 : MaskUserName() : %s\n ", test3)
+
+	fmt.Printf("test 4 : IndexOfAtSymbol() : %d\n ", test4)
+
+	fmt.Printf("test 5 : TrimAndSplitUserID() : %s\n ", test5)
+
+	fmt.Printf("test 6 : ConvertStringToInt() : %d\n ", test6)
 
 }
