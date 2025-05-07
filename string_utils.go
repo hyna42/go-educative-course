@@ -8,12 +8,16 @@ func IdentifyPrefixPostfix(userID, email string) bool {
 }
 
 func ContainsEducative(email string) bool {
-    return strings.Contains(email,"educative")
+	return strings.Contains(email, "educative")
 }
 
-// func MaskUserName(email string) string {
-//     // Implement this function
-// }
+func MaskUserName(email string) string {
+	// Implement this function
+	splitstr := strings.Split(email, "@")
 
+	if len(splitstr) > 0 {
+		return splitstr[0]
+	}
 
-
+	return ""
+}

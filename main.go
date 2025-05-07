@@ -77,8 +77,12 @@ func main() {
 
 	test2 := ContainsEducative(phrasetestEmail)
 
+	test3 := MaskUserName("john-doe@gmail.com")
+
 	fmt.Printf("test 1 : IdentifyPrefixPostfix() : %t\n ", test1)
 
 	fmt.Printf("test 2 : ContainsEducative() : %t\n ", test2)
+
+	fmt.Printf("test 3 : ContainsEducative() : %s\n ", test3)
 
 }
