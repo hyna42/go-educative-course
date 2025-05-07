@@ -68,5 +68,17 @@ func main() {
 	words := strings.Fields(trimmed)
 
 	fmt.Printf("str2 : Split() : %v\n ", words)
-	
+
+	//test string8string.go functions
+	phrasetestId := "fid:42"
+	phrasetestEmail := "email:johdoe@educative.io"
+
+	test1 := IdentifyPrefixPostfix(phrasetestId, phrasetestEmail)
+
+	test2 := ContainsEducative(phrasetestEmail)
+
+	fmt.Printf("test 1 : IdentifyPrefixPostfix() : %t\n ", test1)
+
+	fmt.Printf("test 2 : ContainsEducative() : %t\n ", test2)
+
 }
