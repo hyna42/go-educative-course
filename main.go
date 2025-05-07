@@ -4,6 +4,7 @@ import (
 	"fmt"
 	"math/rand"
 	"reflect"
+	"strings"
 )
 
 func PrintMessage(message string) {
@@ -48,4 +49,24 @@ func main() {
 
 	fmt.Printf("%.2f°C = %2.f°F\n", temp, toFahrenheit(temp))
 
+	//string
+	str1 := " Hello test1 JOHN DOE " + "re hello    "
+
+	fmt.Printf("string str 1 : , %s\n, lenStr1 ==> %d\n", str1, len(str1))
+
+	fmt.Printf("str HasPrefix : %t\n", strings.HasPrefix(str1, "Hello"))
+
+	fmt.Printf("str Index() : %d\n", strings.Index(str1, "hello"))
+
+	str2 := strings.Replace(str1, "test1", "test2", -1)
+	fmt.Printf("str2 Replace() : %s\n", strings.ToUpper(str2))
+
+	trimmed := strings.TrimSpace(str2)
+
+	fmt.Printf("str2 TrimSpace() : %s\n, lenStr2 [after Trim] ==> %d\n ", trimmed, len(trimmed))
+
+	words := strings.Fields(trimmed)
+
+	fmt.Printf("str2 : Split() : %v\n ", words)
+	
 }
