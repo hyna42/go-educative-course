@@ -5,6 +5,7 @@ import (
 	"math/rand"
 	"reflect"
 	"strings"
+	"time"
 )
 
 func PrintMessage(message string) {
@@ -96,5 +97,10 @@ func main() {
 	fmt.Printf("test 5 : TrimAndSplitUserID() : %s\n ", test5)
 
 	fmt.Printf("test 6 : ConvertStringToInt() : %d\n ", test6)
+
+	//time
+	t := time.Now()
+
+	fmt.Println("Time : now ==> ", t)
 
 }
