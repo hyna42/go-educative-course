@@ -103,4 +103,7 @@ func main() {
 
 	fmt.Println("Time : now ==> ", t)
 
+	fmt.Println("Time : Minutes ==> ", t.Minute()) 
+	
+	fmt.Println("Time : Day ==> ", t.Day())     
 }
