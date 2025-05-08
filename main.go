@@ -101,9 +101,5 @@ func main() {
 	//time
 	t := time.Now()
 
-	fmt.Println("Time : now ==> ", t)
-
-	fmt.Println("Time : Minutes ==> ", t.Minute()) 
-	
-	fmt.Println("Time : Day ==> ", t.Day())     
+	fmt.Printf("Today ==> %02d.%02d.%4d\n", t.Day(), t.Month(), t.Year())
 }
