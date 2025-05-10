@@ -135,4 +135,6 @@ func main() {
 	seasonName := Season(month)
 	fmt.Printf("Sean of month number %d is : %s\n ", month, seasonName)
 
+	//challenge 2 : continue
+	FizzBuzz()
 }

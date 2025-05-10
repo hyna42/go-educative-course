@@ -1,5 +1,9 @@
+// Challenge 2 : Control structures
 package main
 
+import "fmt"
+
+//switch
 func Season(month int) string {
 	var season string
 	switch month {
@@ -15,4 +19,24 @@ func Season(month int) string {
 		season = "Season unknown"
 	}
 	return season
+}
+
+//break and continue
+func FizzBuzz() {
+	for i := 0; i <= 60; i++ {
+		if i%3 == 0 && i%5 == 0 {
+			fmt.Print("FizzBuzz")
+			continue
+		}
+		if i%3 == 0 {
+			fmt.Print("Fizz")
+			continue
+		}
+		if i%5 == 0 {
+			fmt.Print("Buzz")
+			continue
+		}
+
+		fmt.Print(i)
+	}
 }
