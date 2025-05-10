@@ -118,4 +118,16 @@ func main() {
 	fmt.Printf("Here is the pointer *p : %s\n", *p)
 	fmt.Printf("Here is the string s : %s\n", s)
 
-}
+	//control stcructures
+	n := -10
+	// x := -10
+
+	result, err := Factorial(n)
+	if err != nil {
+		fmt.Printf("Error calculating factoriel of %d : %s\n ", n, err)
+	}else{
+		fmt.Printf("Factoriel of %d is : %d ",n,result)
+	}
+	
+
+}	
