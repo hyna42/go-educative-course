@@ -102,4 +102,13 @@ func main() {
 	t := time.Now()
 
 	fmt.Printf("Today ==> %02d.%02d.%4d\n", t.Day(), t.Month(), t.Year())
+
+
+	//Pointers
+	var i1 = 5
+	var ptr *int;
+	ptr = &i1
+	*ptr = 6
+	fmt.Printf("An integer: %d, it's location in memory: %p\n ",i1, &ptr)
+
 }
