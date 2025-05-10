@@ -125,9 +125,14 @@ func main() {
 	result, err := Factorial(n)
 	if err != nil {
 		fmt.Printf("Error calculating factoriel of %d : %s\n ", n, err)
-	}else{
-		fmt.Printf("Factoriel of %d is : %d ",n,result)
+	} else {
+		fmt.Printf("Factoriel of %d is : %d ", n, result)
 	}
-	
 
-}	
+	//challenge 2 : switch
+
+	month := -1
+	seasonName := Season(month)
+	fmt.Printf("Sean of month number %d is : %s\n ", month, seasonName)
+
+}
