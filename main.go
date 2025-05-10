@@ -103,12 +103,19 @@ func main() {
 
 	fmt.Printf("Today ==> %02d.%02d.%4d\n", t.Day(), t.Month(), t.Year())
 
-
 	//Pointers
 	var i1 = 5
-	var ptr *int;
+	var ptr *int
 	ptr = &i1
 	*ptr = 6
-	fmt.Printf("An integer: %d, it's location in memory: %p\n ",i1, &ptr)
+	fmt.Printf("An integer: %d, it's location in memory: %p\n ", i1, &ptr)
+
+	s := "go buy"
+	var p *string = &s
+	*p = "ciao"
+
+	fmt.Printf("Here is the pointer p : %p\n", p)
+	fmt.Printf("Here is the pointer *p : %s\n", *p)
+	fmt.Printf("Here is the string s : %s\n", s)
 
 }
