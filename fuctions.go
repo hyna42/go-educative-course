@@ -1,7 +1,7 @@
 package main
 
-func greeting(name string) {
-	println("In greeting: Hi!!!!!", name)
-	name = "Johnny"
-	println("In greeting: Hi!!!!!", name)
+func Greeting(name *string) {
+	println("In greeting: Hi first ", *name)
+	*name = "Johnny"
+	println("In greeting: Hi again", *name)
 }
