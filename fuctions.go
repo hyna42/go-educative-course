@@ -18,3 +18,11 @@ func SumProductDiff(i, j int) (s int, p int, d int) { // named version
 	s, p, d = i+j, i*j, i-j
 	return
 }
+
+func SumInts(list ...int) (sum int){
+	
+	for _,v := range list {
+		sum += v
+	}
+	return
+}
