@@ -19,10 +19,21 @@ func SumProductDiff(i, j int) (s int, p int, d int) { // named version
 	return
 }
 
-func SumInts(list ...int) (sum int){
-	
-	for _,v := range list {
+func SumInts(list ...int) (sum int) {
+
+	for _, v := range list {
 		sum += v
+	}
+	return
+}
+
+//challenge : factorielle
+
+func MyFactorial(n uint64) (fac uint64) {
+	if n == 0 || n == 1 {
+		fac = 1
+	} else {
+		fac = n * MyFactorial(n-1)
 	}
 	return
 }

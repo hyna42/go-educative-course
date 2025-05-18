@@ -13,6 +13,10 @@ func main() {
 
 	sum := SumInts(1,2,3,4,888)
 	//challenge sumInts
-	fmt.Printf("Sum 2: %d",sum)
+	fmt.Printf("Sum 2: %d\n",sum)
+
+	//challenge factoriel
+	fac := MyFactorial(10)
+	fmt.Printf("Factorielle : %d\n",fac)
 
 }
