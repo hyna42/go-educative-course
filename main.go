@@ -27,4 +27,12 @@ func main() {
 	fmt.Printf("even : %d\n", even)
 	fmt.Printf("odd : %d\n", odd)
 
+	//arrays
+	var arr [4]int
+
+	for i := range len(arr) {
+		arr[i] = i + 1
+		fmt.Printf("Item at index %d is %d\n", i, arr[i])
+	}
+
 }
