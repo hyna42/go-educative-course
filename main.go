@@ -39,4 +39,8 @@ func main() {
 	sumArr := SumArr(&arr)
 	fmt.Printf("SumArr: %d\n", sumArr)
 
+	//challenge : Filling Array with Loop Counter
+	arr2 := LoopArray()
+	fmt.Printf("Challenge Array 2 ==> : %d\n ", arr2)
+
 }
