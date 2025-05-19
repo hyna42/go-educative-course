@@ -16,3 +16,18 @@ func LoopArray() [15]int {
 	}
 	return arr
 }
+
+// Challenge: Finding Fibonacci Numbers with Array
+
+func Fibs() [10]int64 {
+	var fib [10]int64
+
+	for i := range len(fib) {
+		if i <= 1 {
+			fib[i] = 1
+		} else {
+			fib[i] = fib[i-1] + fib[i-2]
+		}
+	}
+	return fib
+}

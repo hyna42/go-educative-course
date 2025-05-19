@@ -43,4 +43,9 @@ func main() {
 	arr2 := LoopArray()
 	fmt.Printf("Challenge Array 2 ==> : %d\n ", arr2)
 
+	// Challenge: Finding Fibonacci Numbers with Array
+
+	var arrFib = Fibs()
+	fmt.Printf("Challenge Array 3 ==> : %d\n ", arrFib)
+
 }
