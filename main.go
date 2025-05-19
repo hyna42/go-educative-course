@@ -35,4 +35,8 @@ func main() {
 		fmt.Printf("Item at index %d is %d\n", i, arr[i])
 	}
 
+	//pass an array as parameter of function
+	sumArr := SumArr(&arr)
+	fmt.Printf("SumArr: %d\n", sumArr)
+
 }
