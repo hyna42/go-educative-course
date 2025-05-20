@@ -47,5 +47,9 @@ func main() {
 
 	var arrFib = Fibs()
 	fmt.Printf("Challenge Array 3 ==> : %d\n ", arrFib)
+	
+	//slices
+	slice1 := arrFib[5:cap(arrFib)]
+	fmt.Printf("Slice 1 ==> : %d\n ", slice1)
 
 }
