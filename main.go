@@ -54,9 +54,13 @@ func main() {
 
 	slice2 := new([]int)
 
+	slice3 := make([]int, 5)
+
 	fmt.Printf("Type arrFib : %T\n", arrFib)
 	fmt.Printf("Type slice1 : %T\n", slice1)
 
 	fmt.Printf("Type slice2 : %T\n", slice2)
+
+	fmt.Printf("Type slice3 : %T\n", slice3)
 
 }
