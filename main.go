@@ -62,5 +62,10 @@ func main() {
 	fmt.Printf("Type slice2 : %T\n", slice2)
 
 	fmt.Printf("Type slice3 : %T\n", slice3)
+	
+	// Finding Fibonacci Numbers with Slices
+	fibArray := FibArray(5)
+	fmt.Printf("Challenge slice 1 : %d\n", fibArray)
+	
 
 }
