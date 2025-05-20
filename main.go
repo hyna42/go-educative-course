@@ -52,4 +52,11 @@ func main() {
 	slice1 := arrFib[5:cap(arrFib)]
 	fmt.Printf("Slice 1 ==> : %d\n ", slice1)
 
+	slice2 := new([]int)
+
+	fmt.Printf("Type arrFib : %T\n", arrFib)
+	fmt.Printf("Type slice1 : %T\n", slice1)
+
+	fmt.Printf("Type slice2 : %T\n", slice2)
+
 }
