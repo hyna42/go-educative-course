@@ -47,7 +47,7 @@ func main() {
 
 	var arrFib = Fibs()
 	fmt.Printf("Challenge Array 3 ==> : %d\n ", arrFib)
-	
+
 	//slices
 	slice1 := arrFib[5:cap(arrFib)]
 	fmt.Printf("Slice 1 ==> : %d\n ", slice1)
@@ -62,10 +62,18 @@ func main() {
 	fmt.Printf("Type slice2 : %T\n", slice2)
 
 	fmt.Printf("Type slice3 : %T\n", slice3)
-	
+
 	// Finding Fibonacci Numbers with Slices
 	fibArray := FibArray(5)
 	fmt.Printf("Challenge slice 1 : %d\n", fibArray)
-	
+
+	//challenge : magnify a slice
+	sliceTest := []int{1, 2, 3}
+	fmt.Println("The length of s before enlarging is:", len(sliceTest))
+	fmt.Println(sliceTest)
+
+	sliceTest = Enlarge(sliceTest, 5)
+	fmt.Println("The length of s after enlarging is:", len(sliceTest))
+	fmt.Println(sliceTest)
 
 }

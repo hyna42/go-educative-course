@@ -12,3 +12,12 @@ func FibArray(term int) []int {
 	}
 	return fib
 }
+
+//challenge : magnify a slice
+func Enlarge(s []int, factor int) []int {
+	newLen := len(s) * factor
+	enlarged := make([]int, newLen)
+
+	copy(enlarged, s)
+	return enlarged
+}
