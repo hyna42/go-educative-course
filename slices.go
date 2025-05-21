@@ -21,3 +21,13 @@ func Enlarge(s []int, factor int) []int {
 	copy(enlarged, s)
 	return enlarged
 }
+
+// Challenge: Inserting Slice in a Slice
+func InsertSlice(slice, insertion []string, index int) []string {
+	result := make([]string, len(slice)+len(insertion))
+	at := copy(result, slice[:index])
+	at += copy(result[at:], insertion)
+	copy(result[at:], slice[index:])
+	return result
+
+}

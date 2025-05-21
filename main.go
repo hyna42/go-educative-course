@@ -76,4 +76,12 @@ func main() {
 	fmt.Println("The length of s after enlarging is:", len(sliceTest))
 	fmt.Println(sliceTest)
 
+	//challenge : inserting slice in a slide
+	s1 := []string{"M", "N", "O", "P", "Q", "R"}
+	s2 := []string{"A", "B", "C"}
+	res := InsertSlice(s1, s2, 0) // at the front
+	fmt.Println(res)             // [A B C M N O P Q R]
+	res = InsertSlice(s1, s2, 3)  // [M N O A B C P Q R]
+	fmt.Println(res)
+
 }
