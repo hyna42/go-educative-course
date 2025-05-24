@@ -43,3 +43,18 @@ func FilterSlices(s []int, fn func(int) bool) []int {
 	}
 	return p
 }
+
+//Challenge: Bubble Sort the Slice
+
+func BubbleSort(s []int) []int {
+
+	n := len(s)
+	for i := 0; i < n-1; i++ {
+		for j := 0; j < n-i-1; j++ {
+			if s[j] > s[j+1] {
+				s[j], s[j+1] = s[j+1], s[j]
+			}
+		}
+	}
+	return s
+}

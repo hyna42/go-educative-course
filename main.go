@@ -88,5 +88,10 @@ func main() {
 	s3 := []int{0, 1, 2, 3, 4, 5, 6, 7, 8, 9}
 	res2 := FilterSlices(s3,IsEven)
 	fmt.Println("Challenge slice 3",res2)
+	
+	//Challenge: Bubble Sort the Slice
+	s4 := []int{4,5,2,1,3}
+	res4 := BubbleSort(s4)
+	fmt.Println("Challenge slice 4",res4)
 
 }
