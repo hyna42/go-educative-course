@@ -79,9 +79,14 @@ func main() {
 	//challenge : inserting slice in a slide
 	s1 := []string{"M", "N", "O", "P", "Q", "R"}
 	s2 := []string{"A", "B", "C"}
-	res := InsertSlice(s1, s2, 0) // at the front
-	fmt.Println(res)             // [A B C M N O P Q R]
-	res = InsertSlice(s1, s2, 3)  // [M N O A B C P Q R]
+	res := InsertSlice(s1, s2, 0) 
+	fmt.Println(res)             
+	res = InsertSlice(s1, s2, 3)  
 	fmt.Println(res)
+
+	//Challenge : Filtering with Higher-Order Functions
+	s3 := []int{0, 1, 2, 3, 4, 5, 6, 7, 8, 9}
+	res2 := FilterSlices(s3,IsEven)
+	fmt.Println("Challenge slice 3",res2)
 
 }
