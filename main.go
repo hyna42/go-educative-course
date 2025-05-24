@@ -79,19 +79,25 @@ func main() {
 	//challenge : inserting slice in a slide
 	s1 := []string{"M", "N", "O", "P", "Q", "R"}
 	s2 := []string{"A", "B", "C"}
-	res := InsertSlice(s1, s2, 0) 
-	fmt.Println(res)             
-	res = InsertSlice(s1, s2, 3)  
+	res := InsertSlice(s1, s2, 0)
+	fmt.Println(res)
+	res = InsertSlice(s1, s2, 3)
 	fmt.Println(res)
 
 	//Challenge : Filtering with Higher-Order Functions
 	s3 := []int{0, 1, 2, 3, 4, 5, 6, 7, 8, 9}
-	res2 := FilterSlices(s3,IsEven)
-	fmt.Println("Challenge slice 3",res2)
-	
+	res2 := FilterSlices(s3, IsEven)
+	fmt.Println("Challenge slice 3", res2)
+
 	//Challenge: Bubble Sort the Slice
-	s4 := []int{4,5,2,1,3}
+	s4 := []int{4, 5, 2, 1, 3}
 	res4 := BubbleSort(s4)
-	fmt.Println("Challenge slice 4",res4)
+	fmt.Println("Challenge slice 4", res4)
+	
+	//Challenge: Reverse a String
+	s5 := "Google"
+	res5 := ReverseString(s5);
+	fmt.Println("Last Challenge slice 5", res5)
+	
 
 }

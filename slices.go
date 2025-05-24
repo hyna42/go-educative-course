@@ -58,3 +58,13 @@ func BubbleSort(s []int) []int {
 	}
 	return s
 }
+
+//Challenge: Reverse a String
+func ReverseString(s string) string {
+	sl2 := []byte(s)
+	for i, j := 0, len(sl2)-1; i < j; i, j = i+1, j-1 {
+		sl2[i], sl2[j] = sl2[j], sl2[i]
+	}
+	return string(sl2)
+}
+
