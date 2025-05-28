@@ -93,11 +93,12 @@ func main() {
 	s4 := []int{4, 5, 2, 1, 3}
 	res4 := BubbleSort(s4)
 	fmt.Println("Challenge slice 4", res4)
-	
+
 	//Challenge: Reverse a String
 	s5 := "Google"
-	res5 := ReverseString(s5);
+	res5 := ReverseString(s5)
 	fmt.Println("Last Challenge slice 5", res5)
-	
 
+	ps := make([]byte, 5) 
+	ps = ps[2:4]
 }
