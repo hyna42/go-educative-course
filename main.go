@@ -102,5 +102,7 @@ func main() {
 	ps := make([]byte, 5) 
 	ps = ps[2:4]
 
-	//
+	//Challenge: Map the Days
+	day := FindDay(4)
+	fmt.Println("Day with index 4 : ",day)
 }

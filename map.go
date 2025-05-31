@@ -11,6 +11,6 @@ var Days = map[int]string{
 	6: "Saturday",
 } // do initialization here
 
-func findDay(n int) string {
+func FindDay(n int) string {
 	return Days[n]
 }
