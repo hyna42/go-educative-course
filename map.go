@@ -12,5 +12,11 @@ var Days = map[int]string{
 } // do initialization here
 
 func FindDay(n int) string {
-	return Days[n]
+	_, ok := Days[n]
+
+	if ok {
+		return Days[n]
+	} else {
+		return "Wrong Day"
+	}
 }
