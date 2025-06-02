@@ -10,6 +10,6 @@ var t *T = new(T)
 
 
 
- v := &myStruct{10, 15.5, "Chris"} 
+//  v := &myStruct{10, 15.5, "Chris"} 
 
  
