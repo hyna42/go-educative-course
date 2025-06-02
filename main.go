@@ -99,10 +99,13 @@ func main() {
 	res5 := ReverseString(s5)
 	fmt.Println("Last Challenge slice 5", res5)
 
-	ps := make([]byte, 5) 
+	ps := make([]byte, 5)
 	ps = ps[2:4]
 
 	//Challenge: Map the Days
 	day := FindDay(7)
-	fmt.Println("Day with index 4 : ",day)
+	fmt.Println("Day with index 4 : ", day)
+
+	//struct
+
 }
