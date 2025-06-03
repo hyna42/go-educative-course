@@ -26,3 +26,5 @@ func (p *Point) Scale(s float64) {
 
 	return
 }
+
+// Challenge: Make a Rectangle
