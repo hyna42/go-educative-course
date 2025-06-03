@@ -108,11 +108,11 @@ func main() {
 
 	//Challenge: Anonymous Struct
 
-	st1 := new(S)
-	st1.a = 10
-	st1.int = 20
-	st1.string = "Baye"
+	// st1 := new(S)
+	// st1.a = 10
+	// st1.int = 20
+	// st1.string = "Baye"
 
-	fmt.Println("st1",*st1)
+	// fmt.Println("st1",*st1)
 
 }
