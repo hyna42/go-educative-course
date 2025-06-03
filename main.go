@@ -113,6 +113,18 @@ func main() {
 	st1.int = 20
 	st1.string = "Baye"
 
-	fmt.Println("st1",*st1)
+	fmt.Println("st1", *st1)
+	//struc : challebge 2
+	str1 := new(Point)
+	str1.X = 4
+	str1.Y = 5
+	str2 := &Point{2, 3}
+	fmt.Println("Abs 1", str1.Abs())
+	fmt.Println("Abs 2", str2.Abs())
+
+	str1.Scale(2)
+
+	fmt.Println("Length of the vector p1", str1.Abs())
+	fmt.Printf("Point p1 scaled by 5 has the following coordinates: X %f - Y %f", str1.X, str1.Y)
 
 }
