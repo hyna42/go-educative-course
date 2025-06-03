@@ -1,15 +1,12 @@
 package main
 
-//intialiaze
-type T struct {
-	x int
-	y string
-}
+//Challenge: Anonymous Struct
 
-var t *T = new(T)
+ type S struct{
+	a float32
+	int 
+	string
+
+ }
 
 
-
-//  v := &myStruct{10, 15.5, "Chris"} 
-
- 
