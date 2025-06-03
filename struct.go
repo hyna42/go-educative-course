@@ -1,5 +1,7 @@
 package main
 
+import "math"
+
 //Challenge: Anonymous Struct
 
 type S struct {
@@ -15,10 +17,12 @@ type Point struct {
 
 func (p *Point) Abs() float64 {
 
-	return 1
+	return math.Sqrt(float64(p.X*p.X + p.Y*p.Y))
 }
 
 func (p *Point) Scale(s float64) {
+	p.X = p.X*5
+	p.Y = p.Y*5
 
 	return
 }
