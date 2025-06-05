@@ -128,8 +128,12 @@ func main() {
 	// fmt.Println("Point p1 scaled by 5 has the following coordinates: X %f - Y %f", str1.X, str1.Y)
 
 	//Struc challenge 3 : test
-	r := &Rectangle{5,4}
-	fmt.Println("Rectangle Area : ",r.Area())
-	fmt.Println("Rectangle Perimeter : ",r.Perimeter())
+	r := &Rectangle{5, 4}
+	fmt.Println("Rectangle Area : ", r.Area())
+	fmt.Println("Rectangle Perimeter : ", r.Perimeter())
+
+	//struct challenge 4: raise salary
+	rs := &Employee{1500}
+	fmt.Println("Salary giveRaise : ", rs.GiveRaise(10))
 
 }

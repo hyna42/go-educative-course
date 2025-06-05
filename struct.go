@@ -43,3 +43,12 @@ func (r *Rectangle) Perimeter() int {
 }
 
 // Challenge: Decide Employee Salary
+
+type Employee struct {
+	salary float64
+}
+
+func (this *Employee) GiveRaise(pct float64) float64 {
+
+	return this.salary * (1 + pct)
+}
