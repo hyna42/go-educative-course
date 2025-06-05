@@ -85,7 +85,7 @@ func (s *Stack) Pop() int {
 func (s *Stack) String() string {
 	out := ""
 	for i, v := range s.data {
-		out = fmt.Printf("[%d:%d]", i, v)
+		out += fmt.Sprintf("[%d:%d]", i, v)
 	}
 	return out
 }
