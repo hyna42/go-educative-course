@@ -1,6 +1,9 @@
 package main
 
-import "math"
+import (
+	"fmt"
+	"math"
+)
 
 //Challenge: Anonymous Struct
 
@@ -53,7 +56,7 @@ func (this *Employee) GiveRaise(pct float64) float64 {
 	return this.salary * (1 + pct)
 }
 
-//Challenge: Implement Stack Data Structure
+// Challenge: Implement Stack Data Structure
 const LIMIT = 4
 
 type Stack struct {
@@ -62,13 +65,27 @@ type Stack struct {
 }
 
 func (s *Stack) Push(n int) {
-	return
+	if s.ix < LIMIT {
+		s.data[s.ix] = n
+		s.ix++
+	}
 }
 
 func (s *Stack) Pop() int {
-	return 0
+	if s.ix == 0 {
+		return -1
+	}
+	s.ix--
+	v := s.data[s.ix]
+	s.data[s.ix] = 0
+	return v
+
 }
 
 func (s *Stack) String() string {
-	return ""
+	out := ""
+	for i, v := range s.data {
+		out = fmt.Printf("[%d:%d]", i, v)
+	}
+	return out
 }
