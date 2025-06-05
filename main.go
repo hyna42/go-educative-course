@@ -124,7 +124,12 @@ func main() {
 
 	str1.Scale(2)
 
-	fmt.Println("Length of the vector p1", str1.Abs())
-	fmt.Printf("Point p1 scaled by 5 has the following coordinates: X %f - Y %f", str1.X, str1.Y)
+	// fmt.Println("Length of the vector p1", str1.Abs())
+	// fmt.Println("Point p1 scaled by 5 has the following coordinates: X %f - Y %f", str1.X, str1.Y)
+
+	//Struc challenge 3 : test
+	r := &Rectangle{5,4}
+	fmt.Println("Rectangle Area : ",r.Area())
+	fmt.Println("Rectangle Perimeter : ",r.Perimeter())
 
 }

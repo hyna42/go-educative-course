@@ -41,3 +41,5 @@ func (r *Rectangle) Perimeter() int {
 	return 2 * (r.lenght + r.width)
 
 }
+
+// Challenge: Decide Employee Salary
