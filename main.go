@@ -136,4 +136,15 @@ func main() {
 	rs := &Employee{1500}
 	fmt.Println("Salary giveRaise : ", rs.GiveRaise(10))
 
+	//struct challenge 5 : stack data structure
+	sc5 := new(Stack)
+	fmt.Printf("%v\n", sc5)
+	sc5.Push(3) // function call to Push
+	fmt.Printf("%v\n", sc5)
+	sc5.Push(7) // function call to Push
+	fmt.Printf("%v\n", sc5)
+	sc5.Push(10) // function call to Push
+	fmt.Printf("%v\n", sc5)
+	sc5.Push(99) // function call to Push
+
 }
