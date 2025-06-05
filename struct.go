@@ -52,3 +52,23 @@ func (this *Employee) GiveRaise(pct float64) float64 {
 
 	return this.salary * (1 + pct)
 }
+
+//Challenge: Implement Stack Data Structure
+const LIMIT = 4
+
+type Stack struct {
+	ix   int
+	data [LIMIT]int
+}
+
+func (s *Stack) Push(n int) {
+	return
+}
+
+func (s *Stack) Pop() int {
+	return 0
+}
+
+func (s *Stack) String() string {
+	return ""
+}
