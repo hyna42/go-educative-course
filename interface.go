@@ -24,3 +24,5 @@ func Operate(s Simpler) {
 	s.Set(42)
 	fmt.Println("Value:", s.Get())
 }
+
+//Challenge: Advancing the Simple Interface
