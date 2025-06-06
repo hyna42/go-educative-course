@@ -12,7 +12,6 @@ type Simple struct {
 	v int
 }
 
-
 func (s *Simple) Get() int {
 	return s.v
 }
@@ -21,7 +20,7 @@ func (s *Simple) Set(u int) {
 	s.v = u
 }
 
-func operate(s Simpler) {
+func Operate(s Simpler) {
 	s.Set(42)
 	fmt.Println("Value:", s.Get())
 }

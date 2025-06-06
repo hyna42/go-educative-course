@@ -147,4 +147,8 @@ func main() {
 	fmt.Printf("%v\n", sc5)
 	sc5.Push(99) // function call to Push
 
+	//interface
+	inter := &Simple{}
+	Operate(inter)
+
 }
