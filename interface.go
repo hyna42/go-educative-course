@@ -51,3 +51,5 @@ func ROperate(s Simpler) {
 		fmt.Println("Unknown Simpler type")
 	}
 }
+
+// Challenge: Advancing the Shapes Analysis
