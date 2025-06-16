@@ -1,6 +1,9 @@
 package main
 
-import "fmt"
+import (
+	"educative-io-test/mysort"
+	"fmt"
+)
 
 func main() {
 	name := "amadou"
@@ -152,13 +155,19 @@ func main() {
 	Operate(inter)
 
 	//Challenge 2 : Advancing the Shapes Analysis
-	i3_sq := &Square{4};
-	i3_tr := &Triangle{4,5};
+	i3_sq := &Square{4}
+	i3_tr := &Triangle{4, 5}
 
-	fmt.Println("Triangle area : ",i3_tr.Area())
-	fmt.Println("Square perimeter : ",i3_sq.Perimeter())
+	fmt.Println("Triangle area : ", i3_tr.Area())
+	fmt.Println("Square perimeter : ", i3_sq.Perimeter())
 
 	// Solution Review: Sort People with Sorter Interface
-
+	p1 := Person{"Xavier", "Papadopoulos"}
+	p2 := Person{"Chris", "Naegels"}
+	p3 := Person{"John", "Doe"}
+	arrP := Persons{p1, p2, p3}
+	fmt.Printf("Before sorting: %v\n", arrP)
+	mysort.Sort(arrP)
+	fmt.Printf("After sorting: %v\n", arrP)
 
 }
