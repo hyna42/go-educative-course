@@ -81,3 +81,23 @@ func (sq *Square) Perimeter() float32 { // implement method called on square to 
 func (tr *Triangle) Area() float32 { // implement method called on triangle to calculate its area
 	return 0.5 * (tr.base * tr.height)
 }
+
+// Challenge: Sort People with Sorter Interface
+type Person struct {
+	firstName string
+	lastName  string
+}
+
+type Persons []Person
+
+func (p Persons) Len() int { return len(p) }
+
+func (p Persons) Less(i, j int) bool {
+	in := p[i].lastName + " " + p[i].firstName
+	jn := p[j].lastName + " " + p[j].firstName
+	return in < jn
+}
+
+func (p Persons) Swap(i, j int) {
+	p[i], p[j] = p[j], p[i]
+}

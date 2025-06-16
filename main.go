@@ -151,11 +151,14 @@ func main() {
 	inter := &Simple{}
 	Operate(inter)
 
-	//interface test challenge 3 // Challenge: Advancing the Shapes Analysis
+	//Challenge 2 : Advancing the Shapes Analysis
 	i3_sq := &Square{4};
 	i3_tr := &Triangle{4,5};
 
 	fmt.Println("Triangle area : ",i3_tr.Area())
 	fmt.Println("Square perimeter : ",i3_sq.Perimeter())
+
+	// Solution Review: Sort People with Sorter Interface
+
 
 }
