@@ -1,0 +1,1 @@
+Files in Go are represented by pointers to objects of type os.File, also called file handles. The standard input os.Stdin and output os.Stdout we used in the previous lesson are both of type *os.File. This is used in the following program:
