@@ -4,37 +4,50 @@ import (
 	"bufio"
 	"fmt"
 	"os"
+	"strings"
 )
 
 func main() {
 	//Reading & Writing using Scanln /  Sscan-family
-	var (
-		firstName, lastName string
-		// i                      int
-		// f                      float32
-		// input1                 = "56.12 / 5212 / Go"
-		// format                 = "%f / %d / %s"
-	)
+	// var (
+	// 	firstName, lastName string
+	// )
 
-	fmt.Println("Please enter your full name: ")
-	fmt.Scanln(&firstName, &lastName)
-	fmt.Printf("Hi you %s %s!\n", firstName, lastName)
-	// fmt.Sscanf(input1, format, &f, &i, &s)
-	// fmt.Println("From the string we read: ", f, i, s)
+	// fmt.Println("Please enter your full name: ")
+	// fmt.Scanln(&firstName, &lastName)
+	// fmt.Printf("Hi you %s %s!\n", firstName, lastName)
 
 	//Reading & Writing using bufio
-	var inputReader *bufio.Reader
-	var (
-		input2 string
-		err    error
-	)
-	inputReader = bufio.NewReader(os.Stdin)
-	fmt.Println("Please enter some input: ")
+	// var inputReader *bufio.Reader
+	// var (
+	// 	input2 string
+	// 	err    error
+	// )
+	// inputReader = bufio.NewReader(os.Stdin)
+	// fmt.Println("Please enter some input: ")
 
-	input2, err = inputReader.ReadString('\n')
+	// input2, err = inputReader.ReadString('\n')
 
-	if err == nil {
-		fmt.Printf("Hi you again : %s\n", input2)
+	// if err == nil {
+	// 	fmt.Printf("Hi you again : %s\n", input2)
+	// }
+	//challenge 1 : read and write
+	inputReader := bufio.NewReader(os.Stdin)
+	fmt.Println("Please enter some input, type S in the new line to stop: ")
+	for {
+		input, err := inputReader.ReadString('\n')
+		if err != nil {
+			fmt.Printf("An error occurred: %s\n", err)
+			return
+		}
+		if strings.TrimSpace(input) == "S" { 
+			fmt.Println("Here are the counts:")
+			fmt.Printf("Number of characters: %d\n", nrchars)
+			fmt.Printf("Number of words: %d\n", nrwords)
+			fmt.Printf("Number of lines: %d\n", nrlines)
+			os.Exit(0)
+		}
+		Counters(input)
 	}
 
 }
